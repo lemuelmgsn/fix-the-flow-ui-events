@@ -79,3 +79,14 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+a:nth-of-type(1){
+  background: var(--secondary);
+  color: var(--highlight-primary);
+  border: var(--line) solid var(--highlight-primary);
+}
+
+a.colorswitch{
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
