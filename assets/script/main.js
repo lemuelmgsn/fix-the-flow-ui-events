@@ -31,7 +31,7 @@ document.addEventListener("keyup", function (Event) {
   }
 })
 
-// Button 4 --- focus
+// Button 4 --- focus(in/out)
 let development = document.querySelector('a:nth-of-type(4)');
 
 development.addEventListener("focusin", function(Event){
@@ -50,10 +50,18 @@ development.addEventListener("focusout", function(Event){
 },
 true,);
 
-// Button 5 --- 'naam eventlistener'
+// Button 5 --- mouse over/out
 let sprint5 = document.querySelector('a:nth-of-type(5)');
 
-// sprint5.addEventListener("iets", function);
+sprint5.addEventListener("mouseover", function(event){
+  event.target.style.color = "var(--secondary)";
+  event.target.style.background = "var(--highlight-secondary)";
+});
+
+sprint5.addEventListener("mouseout", function(event){
+  event.target.style.color = "";
+  event.target.style.background = "";
+});
 
 
 
